@@ -9,9 +9,9 @@
 import Foundation
 extension String
 {
-    func withCountryCode(countryType:CountryType) -> String
+    func countryCode(countryType:CountryType) -> String
     {
-        if(CountryType.self == CountryType.Canada)
+        if(CountryType == Canada)
         {
             return "+1\(self)"
         }
