@@ -13,6 +13,11 @@ class Mobile : Bill
     var mobileNumber : String
     var internetGBused : Float
     var minuteUsed : Int
+    var countryType : CountryType
+    var totalBillAmount: Float
+    {
+        
+    }
     
     override init()
     {
