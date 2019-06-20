@@ -9,15 +9,42 @@
 import Foundation
 class Customer
 {
-    var customerid : String
-    var firstName : String
-    var lastName : String
+    let customerid : Int
+
+    private var firstName : String
+    var getfirstName : String
+    {
+        get
+        {
+            return self.firstName
+        }
+    }
+    
+    private var lastName : String
+    var getlastName : String
+    {
+        get
+        {
+            return self.lastName
+        }
+    }
+    //computed value
     var fullName : String
     {
         return "\(self.firstName) \(self.lastName)"
     }
-    var email : String
+    
+    private let email : String
+    var getemail : String
+    {
+        get
+        {
+            return self.email
+        }
+    }
+    
     var arrayOfBills : [Bill] = [Bill]()
+    //computed value
     var totalBillToPay : Float
     {
         var total : Float = 0
@@ -26,5 +53,18 @@ class Customer
             total = total + bill.totalBillAmount
         }
         return total
+    }
+    
+    init()
+    {
+        self.customerid = 0
+        self.firstName = ""
+        self.lastName = ""
+        self.email = ""
+        self.arrayOfBills = []
+    }
+    init(customerid : Int,firstName : String,lastName : String,email : String,arrayOfBills : [Bill])
+    {
+        
     }
 }
