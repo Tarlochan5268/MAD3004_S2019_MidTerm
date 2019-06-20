@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Bill.swift
 //  C0751142_MID_TERM_MAD3004
 //
 //  Created by admin on 2019-06-20.
@@ -7,6 +7,3 @@
 //
 
 import Foundation
-
-print("Commit test")
-print("Commit test")

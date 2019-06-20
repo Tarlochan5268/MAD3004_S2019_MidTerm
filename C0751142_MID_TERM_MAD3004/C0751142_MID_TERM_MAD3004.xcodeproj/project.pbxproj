@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		842B3DE422BC3AD4007D1557 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B3DE322BC3AD4007D1557 /* main.swift */; };
+		842B3DEE22BC4233007D1557 /* BillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B3DED22BC4233007D1557 /* BillType.swift */; };
+		842B3DF022BC426D007D1557 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B3DEF22BC426D007D1557 /* Bill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		842B3DE022BC3AD4007D1557 /* C0751142_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0751142_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		842B3DE322BC3AD4007D1557 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		842B3DED22BC4233007D1557 /* BillType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillType.swift; sourceTree = "<group>"; };
+		842B3DEF22BC426D007D1557 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,19 @@
 		842B3DE222BC3AD4007D1557 /* C0751142_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
+				842B3DEA22BC41F7007D1557 /* Support */,
 				842B3DE322BC3AD4007D1557 /* main.swift */,
+				842B3DEF22BC426D007D1557 /* Bill.swift */,
 			);
 			path = C0751142_MID_TERM_MAD3004;
+			sourceTree = "<group>";
+		};
+		842B3DEA22BC41F7007D1557 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				842B3DED22BC4233007D1557 /* BillType.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842B3DEE22BC4233007D1557 /* BillType.swift in Sources */,
+				842B3DF022BC426D007D1557 /* Bill.swift in Sources */,
 				842B3DE422BC3AD4007D1557 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
