@@ -11,10 +11,26 @@ class Hydro : Bill
 {
     var agencyName : String
     var unitConsumed : Float
+    let unitRate : Float = 10
     
     override init()
     {
         self.agencyName = ""
         self.unitConsumed = 0
+        super.init()
+    }
+    init(billId: Int, billDate: Date, billType: BillType,agencyName : String,unitConsumed : Float )
+    {
+        self.agencyName = agencyName
+        self.unitConsumed = unitConsumed
+        super.init(billId: billId, billDate: billDate, billType: billType,totalBillAmount: 0)
+    }
+    
+    func calculateTotal()->Float
+    {
+        var total : Float = 0
+        total = self.unitConsumed * self.unitRate
+        self.totalBillAmount = total
+        return total
     }
 }

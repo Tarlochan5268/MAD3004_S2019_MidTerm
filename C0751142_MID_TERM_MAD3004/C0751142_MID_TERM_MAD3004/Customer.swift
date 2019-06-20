@@ -71,4 +71,8 @@ class Customer
         self.email = email
         self.arrayOfBills = arrayOfBills
     }
+    
+    static var customerDict = [Int:Customer]()
+    
+    func addBill()
 }

@@ -11,7 +11,7 @@ extension String
 {
     func countryCode(countryType:CountryType) -> String
     {
-        if(CountryType == Canada)
+        if(countryType == countryType)
         {
             return "+1\(self)"
         }

@@ -9,3 +9,5 @@
 import Foundation
 var c1bill1 : Bill = Mobile()
 
+var hi = CountryType.Canada
+print(hi)
