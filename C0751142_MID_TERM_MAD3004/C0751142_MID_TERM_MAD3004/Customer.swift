@@ -65,6 +65,10 @@ class Customer
     }
     init(customerid : Int,firstName : String,lastName : String,email : String,arrayOfBills : [Bill])
     {
-        
+        self.customerid = customerid
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+        self.arrayOfBills = arrayOfBills
     }
 }
