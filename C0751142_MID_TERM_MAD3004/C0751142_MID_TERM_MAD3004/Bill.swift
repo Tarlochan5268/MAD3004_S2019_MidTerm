@@ -9,5 +9,14 @@
 import Foundation
 class Bill
 {
-    
+    let billId : Int
+    var billDate : Date
+    var billType : BillType
+    //var totalBillAmount
+    init()
+    {
+        self.billId = 0
+        self.billDate = Date()
+        self.billType = BillType.None
+    }
 }
