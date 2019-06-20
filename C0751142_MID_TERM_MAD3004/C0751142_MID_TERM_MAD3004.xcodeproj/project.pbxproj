@@ -11,6 +11,7 @@
 		842B3DEE22BC4233007D1557 /* BillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B3DED22BC4233007D1557 /* BillType.swift */; };
 		842B3DF022BC426D007D1557 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B3DEF22BC426D007D1557 /* Bill.swift */; };
 		842B3DF222BC4378007D1557 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B3DF122BC4378007D1557 /* Mobile.swift */; };
+		842B3DF422BC441D007D1557 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B3DF322BC441D007D1557 /* Internet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		842B3DED22BC4233007D1557 /* BillType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillType.swift; sourceTree = "<group>"; };
 		842B3DEF22BC426D007D1557 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		842B3DF122BC4378007D1557 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		842B3DF322BC441D007D1557 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				842B3DE322BC3AD4007D1557 /* main.swift */,
 				842B3DEF22BC426D007D1557 /* Bill.swift */,
 				842B3DF122BC4378007D1557 /* Mobile.swift */,
+				842B3DF322BC441D007D1557 /* Internet.swift */,
 			);
 			path = C0751142_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				842B3DF022BC426D007D1557 /* Bill.swift in Sources */,
 				842B3DE422BC3AD4007D1557 /* main.swift in Sources */,
 				842B3DF222BC4378007D1557 /* Mobile.swift in Sources */,
+				842B3DF422BC441D007D1557 /* Internet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
