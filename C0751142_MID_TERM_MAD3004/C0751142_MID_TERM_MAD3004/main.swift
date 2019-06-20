@@ -8,6 +8,4 @@
 
 import Foundation
 
-print("Hello, World!")
-
 print("Commit test")
