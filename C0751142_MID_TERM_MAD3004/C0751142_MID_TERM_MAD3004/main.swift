@@ -7,6 +7,5 @@
 //
 
 import Foundation
+var c1bill1 : Bill = Mobile()
 
-print("Commit test")
-print("Commit test")

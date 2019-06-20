@@ -13,11 +13,16 @@ class Bill
     var billDate : Date
     var billType : BillType
     var totalBillAmount : Float
+    
     init()
     {
         self.billId = 0
         self.billDate = Date()
         self.billType = BillType.None
-        self.totalBillAmount = 0
+    }
+    init(billId : Int,billDate : Date,billType : BillType) {
+        self.billId = billId
+        self.billDate = billDate
+        self.billType = billType
     }
 }
