@@ -74,5 +74,10 @@ class Customer
     
     static var customerDict = [Int:Customer]()
     
-    func addBill()
+    static func addCustomer(customer : Customer)
+    {
+        customerDict.updateValue(customer, forKey: customer.customerid )
+    }
+    
+    
 }
