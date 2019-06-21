@@ -79,5 +79,17 @@ class Customer
         customerDict.updateValue(customer, forKey: customer.customerid )
     }
     
+    static func getCustomerById(customerid : Int) -> Customer?
+    {
+        if let customerObj = customerDict[customerid]
+        {
+            return customerObj
+        }
+        else
+        {
+            return nil
+        }
+    }
+    
     
 }
