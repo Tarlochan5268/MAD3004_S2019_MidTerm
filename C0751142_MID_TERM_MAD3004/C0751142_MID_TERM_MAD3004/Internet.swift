@@ -34,4 +34,14 @@ class Internet : Bill
         self.totalBillAmount = total
         return total
     }
+    
+    override func display()
+    {
+        print("Bill id : ",self.billId)
+        print("Bill Date : ",self.billDate.getForamttedDate())
+        print("Bill Type : ",self.billType)
+        print("Bill Amount : ",self.totalBillAmount.currency())
+        print("Provider Name : ",self.providerName)
+        print("Internet Usage : ",self.internetGBused," GB")
+    }
 }

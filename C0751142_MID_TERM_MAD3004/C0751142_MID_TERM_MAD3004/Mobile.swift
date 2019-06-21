@@ -55,7 +55,7 @@ class Mobile : Bill
         print("Manufacturer Name : ",self.mobileModelName)
         print("Plan Name : ",self.planName)
         print("Mobile Number : ",self.mobileNumber.countryCode(countryType: self.countryType))
-        print("Internet Usage : ",self.internetGBused)
-        print("Minutes Usage : ",self.minuteUsed)
+        print("Internet Usage : ",self.internetGBused," GB")
+        print("Minutes Usage : ",self.minuteUsed," minutes")
     }
 }
