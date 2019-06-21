@@ -7,12 +7,20 @@
 //
 
 import Foundation
-class Bill
+class Bill : IDisplay
 {
+    func display()
+    {
+        print("Bill id : ",self.billId)
+        print("Bill Date : ",self.billDate.getForamttedDate())
+        print("Bill Type : ",self.billType)
+        print("Bill Amount : ",self.totalBillAmount.currency())
+    }
+    
     let billId : Int
     var billDate : Date
     var billType : BillType
-    var totalBillAmount : Float
+    public var totalBillAmount : Float
     
     init()
     {
@@ -34,4 +42,5 @@ class Bill
         self.totalBillAmount = total
         return total
     }
+    
 }
