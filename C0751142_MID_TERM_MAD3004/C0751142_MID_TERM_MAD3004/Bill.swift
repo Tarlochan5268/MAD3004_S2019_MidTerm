@@ -27,4 +27,11 @@ class Bill
         self.billType = billType
         self.totalBillAmount = totalBillAmount
     }
+    
+    func calculateTotal()->Float
+    {
+        var total : Float = 0
+        self.totalBillAmount = total
+        return total
+    }
 }
