@@ -26,7 +26,7 @@ class Hydro : Bill
         super.init(billId: billId, billDate: billDate, billType: billType,totalBillAmount: 0)
     }
     
-    func calculateTotal()->Float
+    override func calculateTotal()->Float
     {
         var total : Float = 0
         total = self.unitConsumed * self.unitRate
