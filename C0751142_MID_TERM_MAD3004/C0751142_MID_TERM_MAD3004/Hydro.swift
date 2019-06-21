@@ -33,4 +33,14 @@ class Hydro : Bill
         self.totalBillAmount = total
         return total
     }
+    
+    override func display()
+    {
+        print("Bill id : ",self.billId)
+        print("Bill Date : ",self.billDate.getForamttedDate())
+        print("Bill Type : ",self.billType)
+        print("Bill Amount : ",self.totalBillAmount.currency())
+        print("Agency Name : ",self.agencyName)
+        print("Unit Consumed : ",self.unitConsumed.formatUnits())
+    }
 }

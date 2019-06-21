@@ -9,6 +9,28 @@
 import Foundation
 class Customer
 {
+    
+    static func display()
+    {
+        for customer in Customer.customerDict
+        {
+            var totalBill : Float = 0
+            print("Customer Id : ",customer.key)
+            print("Customer Full Name : ",customer.value.fullName)
+            print("Customer Email ID : ",customer.value.getemail)
+            print("\t\t---- Bill Information ----\t\t")
+            for bill in customer.value.arrayOfBills
+            {
+                print("******************************************")
+                bill.display()
+                print("******************************************")
+                //print("\t\t\tTotal Bill Amount to Pay : ",bill.calculateTotal().currency())
+                totalBill = totalBill + bill.calculateTotal()
+            }
+            print("\t\t\tTotal Bill Amount to Pay : ",totalBill.currency())
+        }
+    }
+    
     let customerid : Int
 
     private var firstName : String
@@ -69,6 +91,12 @@ class Customer
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
+        /*
+        if !self.isValidEmail(emailStr: email)
+        {
+            throw CustomerError.invalidEmail
+        }
+        */
         self.arrayOfBills = arrayOfBills
     }
     
@@ -101,4 +129,12 @@ class Customer
         return total
     }
     
+    // For Email Valid
+    private func isValidEmail(emailStr:String) -> Bool
+    {
+        let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", regex)
+        return emailTest.evaluate(with: emailStr)
+    }
 }

@@ -8,6 +8,9 @@
 
 import Foundation
 
+do{
+
+
 var dateFormatter = DateFormatter()
 dateFormatter.dateFormat = "EEEE, dd MMMM, yyyy"
 //yyyy-MM-dd HH:mm:ss
@@ -44,5 +47,14 @@ Customer.addCustomer(customer: customer2)
 
 
 var c3bill1 : Bill = Hydro(billId: 1, billDate: formattedDate3, billType: BillType.Hydro, agencyName: "Planet Energy", unitConsumed: 40)
+c3bill1.calculateTotal()
 var customer3 : Customer = Customer(customerid: 3, firstName: "Anetta", lastName: "Langrick", email: "bgeillc@europa.eu", arrayOfBills: [c3bill1])
 Customer.addCustomer(customer: customer3)
+
+Customer.display()
+
+}
+catch(CustomerError.invalidEmail)
+{
+    print("Error : Invalid Email")
+}

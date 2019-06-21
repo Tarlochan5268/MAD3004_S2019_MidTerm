@@ -13,4 +13,12 @@ extension Float
     {
         return String(format: "$%0.2f", self)
     }
+    public func formatUnits() -> String
+    {
+        return String(format : "%0.0f units", self)
+    }
+    public func formatGb() -> String
+    {
+        return String(format : "%0.0f GB", self)
+    }
 }

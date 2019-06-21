@@ -42,6 +42,6 @@ class Internet : Bill
         print("Bill Type : ",self.billType)
         print("Bill Amount : ",self.totalBillAmount.currency())
         print("Provider Name : ",self.providerName)
-        print("Internet Usage : ",self.internetGBused," GB")
+        print("Internet Usage : ",self.internetGBused.formatGb())
     }
 }
