@@ -91,5 +91,14 @@ class Customer
         }
     }
     
+    func calculateTotalBill() ->Float
+    {
+        var total : Float = 0
+        for bill in self.arrayOfBills
+        {
+            total = total + self.totalBillToPay
+        }
+        return total
+    }
     
 }

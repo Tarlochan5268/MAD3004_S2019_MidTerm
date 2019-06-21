@@ -36,7 +36,7 @@ var c2bill2 : Bill = Internet(billId: 2, billDate: formattedDate3, billType: Bil
 c2bill2.calculateTotal()
 
 var formattedDate4 : Date = dateFormatter.date(from: "Thursday, 24 January, 2019")!
-var c2bill3 : Bill = Mobile(billId: 3, billDate: formattedDate4, billType: BillType.Mobile, mobileModelName: "Galaxy Samsung Inc.", mobileNumber: "1234567890", internetGBused: 5, minuteUsed: 356, countryType: CountryType.Canada)
+var c2bill3 : Bill = Mobile(billId: 3, billDate: formattedDate4, billType: BillType.Mobile, mobileModelName: "Galaxy Samsung Inc.", mobileNumber: "1234567890", internetGBused: 5, minuteUsed: 356, countryType: CountryType.Canada,planName: "Prepaid Talk + Text plan")
 c2bill3.calculateTotal()
 
 var customer2 : Customer = Customer(customerid: 2, firstName: "Vipul", lastName: "Garg", email: "adurrant1@github.io", arrayOfBills: [c2bill1,c2bill2,c2bill3])
